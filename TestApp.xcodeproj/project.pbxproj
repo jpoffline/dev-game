@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350182861DFC5765002547F9 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182841DFC5765002547F9 /* Platform.cpp */; };
+		350182891DFC57A7002547F9 /* Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182871DFC57A7002547F9 /* Collider.cpp */; };
+		3501828C1DFC57E6002547F9 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3501828A1DFC57E6002547F9 /* Player.cpp */; };
+		350182901DFC5C16002547F9 /* Interactions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3501828E1DFC5C16002547F9 /* Interactions.cpp */; };
+		350182931DFF3EC4002547F9 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182911DFF3EC4002547F9 /* Screen.cpp */; };
+		350182961E01C07F002547F9 /* GameFundamental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182941E01C07F002547F9 /* GameFundamental.cpp */; };
+		350182981E01DCA7002547F9 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182971E01DCA6002547F9 /* Game.cpp */; };
+		3501829B1E06E065002547F9 /* Plaque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182991E06E065002547F9 /* Plaque.cpp */; };
+		3501829E1E06E075002547F9 /* PlaqueSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3501829C1E06E075002547F9 /* PlaqueSet.cpp */; };
+		351B6A9B1E12D23D000A6B15 /* ObjectFundamental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */; };
+		351B6A9F1E155CF3000A6B15 /* Bat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6A9D1E155CF3000A6B15 /* Bat.cpp */; };
+		351B6AA21E155DA1000A6B15 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AA01E155DA1000A6B15 /* Ball.cpp */; };
+		351B6AA51E155E1C000A6B15 /* Pong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AA31E155E1C000A6B15 /* Pong.cpp */; };
+		351B6AA81E156068000A6B15 /* DS-DIGIT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 351B6AA71E156068000A6B15 /* DS-DIGIT.TTF */; };
+		351B6AAB1E15682F000A6B15 /* Bob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AA91E15682F000A6B15 /* Bob.cpp */; };
+		351B6AAF1E1568DF000A6B15 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AAD1E1568DF000A6B15 /* Engine.cpp */; };
+		351B6AB11E156A6B000A6B15 /* bob.png in Resources */ = {isa = PBXBuildFile; fileRef = 351B6AB01E156A6B000A6B15 /* bob.png */; };
+		351B6AB41E1577BD000A6B15 /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AB21E1577BD000A6B15 /* HUD.cpp */; };
+		351B6AB91E159819000A6B15 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AB71E159819000A6B15 /* Block.cpp */; };
+		351B6ABC1E159C2A000A6B15 /* Hitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6ABA1E159C2A000A6B15 /* Hitter.cpp */; };
+		351B6ABF1E15A988000A6B15 /* Blocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6ABD1E15A988000A6B15 /* Blocks.cpp */; };
 		3535A0AB1DF89B1F008D0DBE /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3535A0AA1DF89B1F008D0DBE /* ResourcePath.mm */; };
 		3535A0AE1DF89B1F008D0DBE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3535A0AD1DF89B1F008D0DBE /* main.cpp */; };
 		3535A0B11DF89B1F008D0DBE /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3535A0B01DF89B1F008D0DBE /* cute_image.jpg */; };
@@ -16,6 +37,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350182841DFC5765002547F9 /* Platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Platform.cpp; sourceTree = "<group>"; };
+		350182851DFC5765002547F9 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		350182871DFC57A7002547F9 /* Collider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collider.cpp; sourceTree = "<group>"; };
+		350182881DFC57A7002547F9 /* Collider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collider.h; sourceTree = "<group>"; };
+		3501828A1DFC57E6002547F9 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		3501828B1DFC57E6002547F9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		3501828D1DFC5824002547F9 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		3501828E1DFC5C16002547F9 /* Interactions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interactions.cpp; sourceTree = "<group>"; };
+		3501828F1DFC5C16002547F9 /* Interactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactions.h; sourceTree = "<group>"; };
+		350182911DFF3EC4002547F9 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		350182921DFF3EC4002547F9 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		350182941E01C07F002547F9 /* GameFundamental.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameFundamental.cpp; sourceTree = "<group>"; };
+		350182951E01C07F002547F9 /* GameFundamental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameFundamental.h; sourceTree = "<group>"; };
+		350182971E01DCA6002547F9 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		350182991E06E065002547F9 /* Plaque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plaque.cpp; sourceTree = "<group>"; };
+		3501829A1E06E065002547F9 /* Plaque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plaque.h; sourceTree = "<group>"; };
+		3501829C1E06E075002547F9 /* PlaqueSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlaqueSet.cpp; sourceTree = "<group>"; };
+		3501829D1E06E075002547F9 /* PlaqueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaqueSet.h; sourceTree = "<group>"; };
+		351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectFundamental.cpp; sourceTree = "<group>"; };
+		351B6A9A1E12D23D000A6B15 /* ObjectFundamental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectFundamental.h; sourceTree = "<group>"; };
+		351B6A9D1E155CF3000A6B15 /* Bat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bat.cpp; sourceTree = "<group>"; };
+		351B6A9E1E155CF3000A6B15 /* Bat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bat.h; sourceTree = "<group>"; };
+		351B6AA01E155DA1000A6B15 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		351B6AA11E155DA1000A6B15 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		351B6AA31E155E1C000A6B15 /* Pong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pong.cpp; sourceTree = "<group>"; };
+		351B6AA41E155E1C000A6B15 /* Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
+		351B6AA71E156068000A6B15 /* DS-DIGIT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIT.TTF"; sourceTree = "<group>"; };
+		351B6AA91E15682F000A6B15 /* Bob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bob.cpp; sourceTree = "<group>"; };
+		351B6AAA1E15682F000A6B15 /* Bob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bob.h; sourceTree = "<group>"; };
+		351B6AAD1E1568DF000A6B15 /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		351B6AAE1E1568DF000A6B15 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		351B6AB01E156A6B000A6B15 /* bob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bob.png; sourceTree = "<group>"; };
+		351B6AB21E1577BD000A6B15 /* HUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
+		351B6AB31E1577BD000A6B15 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		351B6AB51E157E65000A6B15 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		351B6AB71E159819000A6B15 /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		351B6AB81E159819000A6B15 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		351B6ABA1E159C2A000A6B15 /* Hitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hitter.cpp; sourceTree = "<group>"; };
+		351B6ABB1E159C2A000A6B15 /* Hitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hitter.h; sourceTree = "<group>"; };
+		351B6ABD1E15A988000A6B15 /* Blocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blocks.cpp; sourceTree = "<group>"; };
+		351B6ABE1E15A988000A6B15 /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocks.h; sourceTree = "<group>"; };
 		3535A0A51DF89B1F008D0DBE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3535A0A91DF89B1F008D0DBE /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
 		3535A0AA1DF89B1F008D0DBE /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -38,6 +100,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351B6A9C1E155CE2000A6B15 /* GameEntities */ = {
+			isa = PBXGroup;
+			children = (
+				351B6A9D1E155CF3000A6B15 /* Bat.cpp */,
+				351B6A9E1E155CF3000A6B15 /* Bat.h */,
+				351B6AA01E155DA1000A6B15 /* Ball.cpp */,
+				351B6ABD1E15A988000A6B15 /* Blocks.cpp */,
+				351B6ABE1E15A988000A6B15 /* Blocks.h */,
+				351B6AB81E159819000A6B15 /* Block.h */,
+				351B6AB71E159819000A6B15 /* Block.cpp */,
+				351B6AA91E15682F000A6B15 /* Bob.cpp */,
+				351B6AAA1E15682F000A6B15 /* Bob.h */,
+				351B6AA11E155DA1000A6B15 /* Ball.h */,
+			);
+			name = GameEntities;
+			sourceTree = "<group>";
+		};
+		351B6AA61E155E31000A6B15 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				351B6AA31E155E1C000A6B15 /* Pong.cpp */,
+				351B6AA41E155E1C000A6B15 /* Pong.h */,
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
+		351B6AAC1E1568CF000A6B15 /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				351B6AAD1E1568DF000A6B15 /* Engine.cpp */,
+				350182881DFC57A7002547F9 /* Collider.h */,
+				350182871DFC57A7002547F9 /* Collider.cpp */,
+				351B6AAE1E1568DF000A6B15 /* Engine.h */,
+				351B6ABA1E159C2A000A6B15 /* Hitter.cpp */,
+				351B6ABB1E159C2A000A6B15 /* Hitter.h */,
+				351B6AB21E1577BD000A6B15 /* HUD.cpp */,
+				351B6AB31E1577BD000A6B15 /* HUD.h */,
+			);
+			name = GameEngine;
+			sourceTree = "<group>";
+		};
 		3535A09B1DF89B1F008D0DBE = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +161,29 @@
 			isa = PBXGroup;
 			children = (
 				3535A0AA1DF89B1F008D0DBE /* ResourcePath.mm */,
+				350182841DFC5765002547F9 /* Platform.cpp */,
+				350182851DFC5765002547F9 /* Platform.h */,
+				350182991E06E065002547F9 /* Plaque.cpp */,
+				3501829A1E06E065002547F9 /* Plaque.h */,
+				3501828A1DFC57E6002547F9 /* Player.cpp */,
+				351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */,
+				351B6A9A1E12D23D000A6B15 /* ObjectFundamental.h */,
+				351B6A9C1E155CE2000A6B15 /* GameEntities */,
+				3501828B1DFC57E6002547F9 /* Player.h */,
+				350182941E01C07F002547F9 /* GameFundamental.cpp */,
+				350182951E01C07F002547F9 /* GameFundamental.h */,
+				351B6AB51E157E65000A6B15 /* utils.h */,
+				3501828D1DFC5824002547F9 /* Game.h */,
+				3501829C1E06E075002547F9 /* PlaqueSet.cpp */,
+				351B6AAC1E1568CF000A6B15 /* GameEngine */,
+				3501829D1E06E075002547F9 /* PlaqueSet.h */,
+				350182971E01DCA6002547F9 /* Game.cpp */,
+				350182911DFF3EC4002547F9 /* Screen.cpp */,
+				350182921DFF3EC4002547F9 /* Screen.h */,
+				351B6AA61E155E31000A6B15 /* Games */,
 				3535A0AC1DF89B1F008D0DBE /* ResourcePath.hpp */,
+				3501828E1DFC5C16002547F9 /* Interactions.cpp */,
+				3501828F1DFC5C16002547F9 /* Interactions.h */,
 				3535A0AD1DF89B1F008D0DBE /* main.cpp */,
 				3535A0AF1DF89B1F008D0DBE /* Resources */,
 				3535A0A81DF89B1F008D0DBE /* Supporting Files */,
@@ -77,7 +202,9 @@
 		3535A0AF1DF89B1F008D0DBE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				351B6AB01E156A6B000A6B15 /* bob.png */,
 				3535A0B01DF89B1F008D0DBE /* cute_image.jpg */,
+				351B6AA71E156068000A6B15 /* DS-DIGIT.TTF */,
 				3535A0B21DF89B1F008D0DBE /* nice_music.ogg */,
 				3535A0B41DF89B1F008D0DBE /* sansation.ttf */,
 				3535A0B61DF89B1F008D0DBE /* icon.png */,
@@ -142,8 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B6AA81E156068000A6B15 /* DS-DIGIT.TTF in Resources */,
 				3535A0B71DF89B1F008D0DBE /* icon.png in Resources */,
 				3535A0B51DF89B1F008D0DBE /* sansation.ttf in Resources */,
+				351B6AB11E156A6B000A6B15 /* bob.png in Resources */,
 				3535A0B31DF89B1F008D0DBE /* nice_music.ogg in Resources */,
 				3535A0B11DF89B1F008D0DBE /* cute_image.jpg in Resources */,
 			);
@@ -172,8 +301,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B6A9B1E12D23D000A6B15 /* ObjectFundamental.cpp in Sources */,
+				3501829E1E06E075002547F9 /* PlaqueSet.cpp in Sources */,
+				351B6AB91E159819000A6B15 /* Block.cpp in Sources */,
+				350182981E01DCA7002547F9 /* Game.cpp in Sources */,
+				350182931DFF3EC4002547F9 /* Screen.cpp in Sources */,
+				351B6A9F1E155CF3000A6B15 /* Bat.cpp in Sources */,
 				3535A0AE1DF89B1F008D0DBE /* main.cpp in Sources */,
+				351B6AA21E155DA1000A6B15 /* Ball.cpp in Sources */,
+				350182861DFC5765002547F9 /* Platform.cpp in Sources */,
+				351B6AAF1E1568DF000A6B15 /* Engine.cpp in Sources */,
+				351B6AB41E1577BD000A6B15 /* HUD.cpp in Sources */,
 				3535A0AB1DF89B1F008D0DBE /* ResourcePath.mm in Sources */,
+				351B6AA51E155E1C000A6B15 /* Pong.cpp in Sources */,
+				350182891DFC57A7002547F9 /* Collider.cpp in Sources */,
+				351B6ABF1E15A988000A6B15 /* Blocks.cpp in Sources */,
+				351B6AAB1E15682F000A6B15 /* Bob.cpp in Sources */,
+				350182961E01C07F002547F9 /* GameFundamental.cpp in Sources */,
+				350182901DFC5C16002547F9 /* Interactions.cpp in Sources */,
+				3501828C1DFC57E6002547F9 /* Player.cpp in Sources */,
+				3501829B1E06E065002547F9 /* Plaque.cpp in Sources */,
+				351B6ABC1E159C2A000A6B15 /* Hitter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +453,7 @@
 				3535A0BC1DF89B20008D0DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

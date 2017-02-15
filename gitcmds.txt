@@ -1,0 +1,3 @@
+SETTING UP A LOCAL REPO WITH A REMOTE GITHUB-HOSTED REMOTE REPO
+git remote add origin https://github.com/<USER>/<REPONAME>.git
+git remote set-url origin https://<USERNAME>:<PASSWORD>@github.com/<USERNAME>/<REPONAME>.git

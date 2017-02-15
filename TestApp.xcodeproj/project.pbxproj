@@ -34,6 +34,7 @@
 		3535A0B31DF89B1F008D0DBE /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 3535A0B21DF89B1F008D0DBE /* nice_music.ogg */; };
 		3535A0B51DF89B1F008D0DBE /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3535A0B41DF89B1F008D0DBE /* sansation.ttf */; };
 		3535A0B71DF89B1F008D0DBE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3535A0B61DF89B1F008D0DBE /* icon.png */; };
+		359EFC451E54EAA70071E07D /* sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 359EFC431E54EAA70071E07D /* sound.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,8 @@
 		3535A0B21DF89B1F008D0DBE /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		3535A0B41DF89B1F008D0DBE /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		3535A0B61DF89B1F008D0DBE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		359EFC431E54EAA70071E07D /* sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sound.cpp; sourceTree = "<group>"; };
+		359EFC441E54EAA70071E07D /* sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 				3535A0AC1DF89B1F008D0DBE /* ResourcePath.hpp */,
 				3501828E1DFC5C16002547F9 /* Interactions.cpp */,
 				3501828F1DFC5C16002547F9 /* Interactions.h */,
+				359EFC431E54EAA70071E07D /* sound.cpp */,
+				359EFC441E54EAA70071E07D /* sound.h */,
 				3535A0AD1DF89B1F008D0DBE /* main.cpp */,
 				3535A0AF1DF89B1F008D0DBE /* Resources */,
 				3535A0A81DF89B1F008D0DBE /* Supporting Files */,
@@ -316,6 +321,7 @@
 				351B6AA51E155E1C000A6B15 /* Pong.cpp in Sources */,
 				350182891DFC57A7002547F9 /* Collider.cpp in Sources */,
 				351B6ABF1E15A988000A6B15 /* Blocks.cpp in Sources */,
+				359EFC451E54EAA70071E07D /* sound.cpp in Sources */,
 				351B6AAB1E15682F000A6B15 /* Bob.cpp in Sources */,
 				350182961E01C07F002547F9 /* GameFundamental.cpp in Sources */,
 				350182901DFC5C16002547F9 /* Interactions.cpp in Sources */,

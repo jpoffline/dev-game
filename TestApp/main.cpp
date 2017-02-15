@@ -15,7 +15,7 @@ int main()
     
 }
  */
-
+/*
 
 #include "Pong.h"
 #include "Engine.h"
@@ -36,4 +36,11 @@ int main()
     return 0;
 
     
+}
+*/
+
+#include "sound.h"
+int main()
+{
+    run_sound();
 }

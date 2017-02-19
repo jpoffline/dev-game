@@ -16,6 +16,8 @@
 		350182981E01DCA7002547F9 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182971E01DCA6002547F9 /* Game.cpp */; };
 		3501829B1E06E065002547F9 /* Plaque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350182991E06E065002547F9 /* Plaque.cpp */; };
 		3501829E1E06E075002547F9 /* PlaqueSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3501829C1E06E075002547F9 /* PlaqueSet.cpp */; };
+		351655A01E5A0DC400EF17F3 /* fundamental_tones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3516559E1E5A0DC400EF17F3 /* fundamental_tones.cpp */; };
+		351655A41E5A251000EF17F3 /* sound_engines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351655A21E5A251000EF17F3 /* sound_engines.cpp */; };
 		351B6A9B1E12D23D000A6B15 /* ObjectFundamental.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */; };
 		351B6A9F1E155CF3000A6B15 /* Bat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6A9D1E155CF3000A6B15 /* Bat.cpp */; };
 		351B6AA21E155DA1000A6B15 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351B6AA01E155DA1000A6B15 /* Ball.cpp */; };
@@ -56,6 +58,10 @@
 		3501829A1E06E065002547F9 /* Plaque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plaque.h; sourceTree = "<group>"; };
 		3501829C1E06E075002547F9 /* PlaqueSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlaqueSet.cpp; sourceTree = "<group>"; };
 		3501829D1E06E075002547F9 /* PlaqueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaqueSet.h; sourceTree = "<group>"; };
+		3516559E1E5A0DC400EF17F3 /* fundamental_tones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fundamental_tones.cpp; sourceTree = "<group>"; };
+		3516559F1E5A0DC400EF17F3 /* fundamental_tones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fundamental_tones.h; sourceTree = "<group>"; };
+		351655A21E5A251000EF17F3 /* sound_engines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sound_engines.cpp; sourceTree = "<group>"; };
+		351655A31E5A251000EF17F3 /* sound_engines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound_engines.h; sourceTree = "<group>"; };
 		351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectFundamental.cpp; sourceTree = "<group>"; };
 		351B6A9A1E12D23D000A6B15 /* ObjectFundamental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectFundamental.h; sourceTree = "<group>"; };
 		351B6A9D1E155CF3000A6B15 /* Bat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bat.cpp; sourceTree = "<group>"; };
@@ -103,19 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351655A11E5A24E900EF17F3 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3516559E1E5A0DC400EF17F3 /* fundamental_tones.cpp */,
+				3516559F1E5A0DC400EF17F3 /* fundamental_tones.h */,
+				359EFC431E54EAA70071E07D /* sound.cpp */,
+				359EFC441E54EAA70071E07D /* sound.h */,
+				351655A21E5A251000EF17F3 /* sound_engines.cpp */,
+				351655A31E5A251000EF17F3 /* sound_engines.h */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
 		351B6A9C1E155CE2000A6B15 /* GameEntities */ = {
 			isa = PBXGroup;
 			children = (
-				351B6A9D1E155CF3000A6B15 /* Bat.cpp */,
-				351B6A9E1E155CF3000A6B15 /* Bat.h */,
-				351B6AA01E155DA1000A6B15 /* Ball.cpp */,
-				351B6ABD1E15A988000A6B15 /* Blocks.cpp */,
-				351B6ABE1E15A988000A6B15 /* Blocks.h */,
-				351B6AB81E159819000A6B15 /* Block.h */,
-				351B6AB71E159819000A6B15 /* Block.cpp */,
-				351B6AA91E15682F000A6B15 /* Bob.cpp */,
-				351B6AAA1E15682F000A6B15 /* Bob.h */,
-				351B6AA11E155DA1000A6B15 /* Ball.h */,
 			);
 			name = GameEntities;
 			sourceTree = "<group>";
@@ -132,6 +141,32 @@
 		351B6AAC1E1568CF000A6B15 /* GameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				3501828B1DFC57E6002547F9 /* Player.h */,
+				350182941E01C07F002547F9 /* GameFundamental.cpp */,
+				350182951E01C07F002547F9 /* GameFundamental.h */,
+				3501828D1DFC5824002547F9 /* Game.h */,
+				3501829C1E06E075002547F9 /* PlaqueSet.cpp */,
+				350182841DFC5765002547F9 /* Platform.cpp */,
+				350182851DFC5765002547F9 /* Platform.h */,
+				350182991E06E065002547F9 /* Plaque.cpp */,
+				3501829A1E06E065002547F9 /* Plaque.h */,
+				3501828A1DFC57E6002547F9 /* Player.cpp */,
+				351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */,
+				351B6A9A1E12D23D000A6B15 /* ObjectFundamental.h */,
+				351B6A9D1E155CF3000A6B15 /* Bat.cpp */,
+				351B6A9E1E155CF3000A6B15 /* Bat.h */,
+				351B6AA01E155DA1000A6B15 /* Ball.cpp */,
+				351B6ABD1E15A988000A6B15 /* Blocks.cpp */,
+				351B6ABE1E15A988000A6B15 /* Blocks.h */,
+				351B6AB81E159819000A6B15 /* Block.h */,
+				351B6AB71E159819000A6B15 /* Block.cpp */,
+				351B6AA91E15682F000A6B15 /* Bob.cpp */,
+				351B6AAA1E15682F000A6B15 /* Bob.h */,
+				351B6AA11E155DA1000A6B15 /* Ball.h */,
+				3501829D1E06E075002547F9 /* PlaqueSet.h */,
+				350182971E01DCA6002547F9 /* Game.cpp */,
+				350182911DFF3EC4002547F9 /* Screen.cpp */,
+				350182921DFF3EC4002547F9 /* Screen.h */,
 				351B6AAD1E1568DF000A6B15 /* Engine.cpp */,
 				350182881DFC57A7002547F9 /* Collider.h */,
 				350182871DFC57A7002547F9 /* Collider.cpp */,
@@ -163,32 +198,15 @@
 		3535A0A71DF89B1F008D0DBE /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				351655A11E5A24E900EF17F3 /* Sound */,
 				3535A0AA1DF89B1F008D0DBE /* ResourcePath.mm */,
-				350182841DFC5765002547F9 /* Platform.cpp */,
-				350182851DFC5765002547F9 /* Platform.h */,
-				350182991E06E065002547F9 /* Plaque.cpp */,
-				3501829A1E06E065002547F9 /* Plaque.h */,
-				3501828A1DFC57E6002547F9 /* Player.cpp */,
-				351B6A991E12D23D000A6B15 /* ObjectFundamental.cpp */,
-				351B6A9A1E12D23D000A6B15 /* ObjectFundamental.h */,
 				351B6A9C1E155CE2000A6B15 /* GameEntities */,
-				3501828B1DFC57E6002547F9 /* Player.h */,
-				350182941E01C07F002547F9 /* GameFundamental.cpp */,
-				350182951E01C07F002547F9 /* GameFundamental.h */,
 				351B6AB51E157E65000A6B15 /* utils.h */,
-				3501828D1DFC5824002547F9 /* Game.h */,
-				3501829C1E06E075002547F9 /* PlaqueSet.cpp */,
 				351B6AAC1E1568CF000A6B15 /* GameEngine */,
-				3501829D1E06E075002547F9 /* PlaqueSet.h */,
-				350182971E01DCA6002547F9 /* Game.cpp */,
-				350182911DFF3EC4002547F9 /* Screen.cpp */,
-				350182921DFF3EC4002547F9 /* Screen.h */,
 				351B6AA61E155E31000A6B15 /* Games */,
 				3535A0AC1DF89B1F008D0DBE /* ResourcePath.hpp */,
 				3501828E1DFC5C16002547F9 /* Interactions.cpp */,
 				3501828F1DFC5C16002547F9 /* Interactions.h */,
-				359EFC431E54EAA70071E07D /* sound.cpp */,
-				359EFC441E54EAA70071E07D /* sound.h */,
 				3535A0AD1DF89B1F008D0DBE /* main.cpp */,
 				3535A0AF1DF89B1F008D0DBE /* Resources */,
 				3535A0A81DF89B1F008D0DBE /* Supporting Files */,
@@ -317,6 +335,7 @@
 				350182861DFC5765002547F9 /* Platform.cpp in Sources */,
 				351B6AAF1E1568DF000A6B15 /* Engine.cpp in Sources */,
 				351B6AB41E1577BD000A6B15 /* HUD.cpp in Sources */,
+				351655A41E5A251000EF17F3 /* sound_engines.cpp in Sources */,
 				3535A0AB1DF89B1F008D0DBE /* ResourcePath.mm in Sources */,
 				351B6AA51E155E1C000A6B15 /* Pong.cpp in Sources */,
 				350182891DFC57A7002547F9 /* Collider.cpp in Sources */,
@@ -326,6 +345,7 @@
 				350182961E01C07F002547F9 /* GameFundamental.cpp in Sources */,
 				350182901DFC5C16002547F9 /* Interactions.cpp in Sources */,
 				3501828C1DFC57E6002547F9 /* Player.cpp in Sources */,
+				351655A01E5A0DC400EF17F3 /* fundamental_tones.cpp in Sources */,
 				3501829B1E06E065002547F9 /* Plaque.cpp in Sources */,
 				351B6ABC1E159C2A000A6B15 /* Hitter.cpp in Sources */,
 			);

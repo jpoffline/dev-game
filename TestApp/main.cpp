@@ -42,5 +42,8 @@ int main()
 #include "sound.h"
 int main()
 {
-    run_sound();
+    SOUND s;
+    //s.sound();
+    s.youtube();
+    //s.keyboard();
 }

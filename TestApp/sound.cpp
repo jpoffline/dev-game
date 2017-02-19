@@ -7,73 +7,195 @@
 //
 
 #include "sound.h"
-const double TWO_PI = 6.28318;
-const unsigned SAMPLES = 44100;
-const unsigned SAMPLE_RATE = 44100;
-const unsigned AMPLITUDE = 30000;
-const double increment = 440./44100;
 
-sf::Int16 gen_sample(const unsigned amplitude, const double x)
+void SOUND::youtube()
 {
-    return amplitude * (sin(x * TWO_PI) +  sin(x * TWO_PI * 2)+ 0.5 * sin(x * TWO_PI * 0.75));
+    
+    sf::RenderWindow window(sf::VideoMode(800,600),"sound");
+    
+    
+    std::vector<sf::Int16> samples;
+
+
+    
+    int nsamples_per_second = 4410;
+    int nseconds = 10;
+    int nsamples = nseconds * nsamples_per_second;
+    int frac = nsamples / 5;
+    int which = 0;
+    for(int i = 0; i < nsamples; i++)
+    {
+        //samples.push_back(JP_sound::Wub(i));
+       // samples.push_back(JP_sound::SquareWave(i,440,0.9 ));
+        /*
+        samples.push_back(
+                          JP_sound::SineWave(i,ftones.get("Fs"),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("B"),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("D"),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("Fs", 1),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("B", 1),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("D", 1),  0.1)
+                          );*/
+        if(i > frac)    {which = 1;}
+        if(i > 2 * frac){which = 2;}
+        if(i > 3 * frac){which = 3;}
+        if(i > 4 * frac){which = 4;}
+        if(which == 0)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("G")));
+        if(which == 1)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("C")));
+        if(which == 2)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("D")));
+        if(which == 3)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("C")));
+        if(which == 4)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("E")));
+//        samples.push_back(JP_sound::Noise(0.9));
+    }
+    
+    sf::SoundBuffer buffer;
+    buffer.loadFromSamples(&samples[0], samples.size(),1,44100);
+    sf::Sound sound;
+
+    sound.setBuffer(buffer);
+
+    
+    
+    bool playing = false;
+    while(window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed)
+            {
+                window.close();
+            }
+
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W) )
+        {
+            sound.play();
+            sf::sleep(sf::milliseconds(100));
+        }
+        
+    }
+    
+    
+}
+
+void SOUND::keyboard()
+{
+    
+    
+    
+    sf::RenderWindow window(sf::VideoMode(800,600),"sound");
+    const int wait = 210;
+    
+    auto samples_vec = gen_keyboard_notes();
+    
+    std::vector<sf::SoundBuffer> buffers(samples_vec.size());
+    std::vector<sf::Sound> sounds(buffers.size());
+    for(int i = 0; i < samples_vec.size(); i++)
+    {
+        buffers[i].loadFromSamples(&samples_vec[i][0], samples_vec[i].size(), 1, 44100);
+        sounds[i].setBuffer(buffers[i]);
+    }
+
+    
+
+    while(window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed)
+            {
+                window.close();
+            }
+            
+        }
+        
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
+        {
+            sounds[0].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S))
+        {
+            sounds[1].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
+        {
+            sounds[2].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
+        {
+            sounds[3].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F))
+        {
+            sounds[4].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::G))
+        {
+            sounds[5].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::H))
+        {
+            sounds[6].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::J))
+        {
+            sounds[7].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::K))
+        {
+            sounds[7].play();
+            sf::sleep(sf::milliseconds(wait));
+            sounds[4].play();
+            sf::sleep(sf::milliseconds(wait));
+            sounds[1].play();
+            sf::sleep(sf::milliseconds(wait));
+            sounds[7].play();
+            sf::sleep(sf::milliseconds(wait));
+        }
+        
+    }
+}
+
+std::vector<std::vector<sf::Int16> >
+SOUND::gen_keyboard_notes()
+{
+
+    std::vector<double> frequencies = ftones.get_octave_middle();
+    for(auto& f : frequencies)
+    {
+        std::cout << f << std::endl;
+    }
+    std::vector<std::vector<sf::Int16> > samples_vec(frequencies.size());
+    
+    int nsamples_per_second = 4410;
+    int nseconds = 1;
+    int nsamples = nseconds * nsamples_per_second;
+    for(int i = 0; i < nsamples; i++)
+    {
+        for(int f = 0; f < frequencies.size(); f++)
+        {
+            samples_vec[f].push_back(JP_sound::PianoTone(i,frequencies[f]));
+        }
+    }
+    
+    return samples_vec;
+    
 }
 
 
 
-struct MODE
-{
-    double freq;
-    double amplitude = 1.0;
-    MODE(double f, unsigned a) : freq(f), amplitude(a){}
-};
 
 
-sf::Int16 gen_sample(const std::vector<MODE>& modes, const unsigned amplitude,const double x)
-{
-    sf::Int16 base = 1.0;
-    for(auto & m : modes)
-    {
-        base += m.amplitude * sin(x * TWO_PI * m.freq);
-    }
-    return base * amplitude;
-}
 
-int run_sound()
-{
-    
-    sf::Int16 raw[SAMPLES];
-    
-    
 
-    double x = 0;
-    
-    std::vector<MODE> modes{
-        MODE(0.01, 1.0), MODE(0.06, 1.0)//, MODE(1,1)//, MODE(2.0, 1.0), MODE(3.0, 1.0), MODE(0.1, 1.0)
-    };
-    
-    
-    for (unsigned i = 0; i < SAMPLES; i++)
-    {
-        raw[i] = gen_sample(modes, AMPLITUDE, x);
-        x += increment;
-    }
-    
-    sf::SoundBuffer Buffer;
-    if (!Buffer.loadFromSamples(raw, SAMPLES, 1, SAMPLE_RATE))
-    {
-        std::cerr << "Loading failed!" << std::endl;
-        return 1;
-    }
-    
-    sf::Sound Sound;
-    Sound.setBuffer(Buffer);
-    Sound.setLoop(true);
-    Sound.play();
-    
-    while (1)
-    {
-        sf::sleep(sf::milliseconds(100));
-    }
-    
-    return 0;
-}

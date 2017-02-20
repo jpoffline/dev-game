@@ -27,24 +27,24 @@ void SOUND::youtube()
     {
         //samples.push_back(JP_sound::Wub(i));
        // samples.push_back(JP_sound::SquareWave(i,440,0.9 ));
-        /*
+        
         samples.push_back(
                           JP_sound::SineWave(i,ftones.get("Fs"),  0.1)
                           +JP_sound::SineWave(i,ftones.get("B"),  0.1)
                           +JP_sound::SineWave(i,ftones.get("D"),  0.1)
                           +JP_sound::SineWave(i,ftones.get("Fs", 1),  0.1)
-                          +JP_sound::SineWave(i,ftones.get("B", 1),  0.1)
+                          +JP_sound::SineWave(i,ftones.get("B", 2),  0.1)
                           +JP_sound::SineWave(i,ftones.get("D", 1),  0.1)
-                          );*/
-        if(i > frac)    {which = 1;}
+                          );
+       /* if(i > frac)    {which = 1;}
         if(i > 2 * frac){which = 2;}
         if(i > 3 * frac){which = 3;}
         if(i > 4 * frac){which = 4;}
-        if(which == 0)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("G")));
-        if(which == 1)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("C")));
-        if(which == 2)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("D")));
-        if(which == 3)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("C")));
-        if(which == 4)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("E")));
+        if(which == 0)samples.push_back(JP_sound::SineWave(i,ftones.get("Fs"), 0.1));
+        if(which == 1)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("G")));
+        //if(which == 2)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("D")));
+        //if(which == 3)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("C")));
+        //if(which == 4)samples.push_back(JP_sound::PianoTone(i,ftones.get_middle("E")));*/
 //        samples.push_back(JP_sound::Noise(0.9));
     }
     
@@ -185,7 +185,7 @@ SOUND::gen_keyboard_notes()
     {
         for(int f = 0; f < frequencies.size(); f++)
         {
-            samples_vec[f].push_back(JP_sound::PianoTone(i,frequencies[f]));
+            samples_vec[f].push_back(JP_sound::PadTone(i,frequencies[f]));
         }
     }
     

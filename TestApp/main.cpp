@@ -40,10 +40,13 @@ int main()
 */
 
 #include "sound.h"
+#include "test_Envelopes.h"
 int main()
 {
     SOUND s;
     //s.sound();
     s.youtube();
     //s.keyboard();
+    dump_envelope();
+    
 }

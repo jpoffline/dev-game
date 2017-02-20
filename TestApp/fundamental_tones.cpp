@@ -37,7 +37,8 @@ FUNDAMENTAL_TONES::get(std::string key)
 double
 FUNDAMENTAL_TONES::get(std::string key , double oct)
 {
-    return get(key) * (oct-1) * 4;
+
+    return get(key) * (oct) * 4;
 }
 
 double

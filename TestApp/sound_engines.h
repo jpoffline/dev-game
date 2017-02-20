@@ -9,6 +9,7 @@
 #pragma once
 #include <cmath>
 #include <stdlib.h>
+#include "Envelopes.h"
 
 const double TWO_PI = 6.28318;
 
@@ -20,6 +21,8 @@ namespace JP_sound
     short Noise(double amp);
     short Wub(double i);
     short PianoTone(double time, double freq);
+    short PadTone(double time, double freq);
     short SquarePianoTone(double time, double freq);
+
     
 }
